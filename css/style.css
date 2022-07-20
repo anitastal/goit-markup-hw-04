@@ -97,14 +97,14 @@ img {
     background-color: var(--header-color);
     border-bottom: 1px solid var(--border-color-header);
 }
-.header-nav {
+.header-wrap {
     display: flex;
     align-items: center;
 }
-.site-nav,
-.contact-nav{
+.header-nav,
+.header-contact{
     display: flex;
-    
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -112,48 +112,51 @@ img {
     text-decoration: none;
 }
 
-.site-nav .header-link:hover,
-.site-nav .header-link:focus,
-.contact-nav .header-link:hover,
-.contact-nav .header-link:focus,
-.site-nav .header-link.current,
+.header-nav .header-nav-link:hover,
+.header-nav .header-nav-link:focus,
+.header-contact .header-contact-link:hover,
+.header-contact .header-contact-link:focus,
+.header-nav .header-nav-link.current,
 .address-link:focus,
 .address-link:hover {
     color: var(--accent-color);
 }
 
-.site-nav .header-link {
+.header-nav-link {
     color: var(--main-text-color);
 }
-.contact-nav{
+
+.header-contact{
     margin-left: auto;
 }
-.contact-nav .header-link{
+
+.header-contact-item .header-contact-link{
     color: var(--second-text-color);
 }
-.site-nav .header-item:not(:last-child),
-.contact-nav .header-item:not(:last-child){
+
+.header-nav .header-nav-item:not(:last-child),
+.header-contact .header-contact-item:not(:last-child){
     margin-right: 50px;
 }
-/* стиль контактов и иконок */
-.header-link{
+
+.header-nav-link{
     display: flex;
     align-items: center;
 }
-.icon-mail {
+.header-contact-icon-mail {
     width: 16px;
     height: 12px;
     fill: currentColor;
     margin-right: 10px;
 }
-.icon-tel {
+.header-contact-icon-tel {
     width: 10px;
     height: 16px;
     fill: currentColor;
     margin-right: 10px;
 }
-.icon-mail:hover,
-.icon-tel:hover {
+.header-contact-icon-mail:hover,
+.header-contact-icon-tel:hover {
     fill: var(--accent-color)
 }
 
