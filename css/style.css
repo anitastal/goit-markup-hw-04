@@ -200,9 +200,11 @@ img {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.63;
     cursor: pointer;
     text-align: center;
     letter-spacing: 0.03em;
+
     
     color: var(--main-text-color);
     background-color: var(--background-button);
@@ -377,7 +379,10 @@ img {
     height: 20px;
 }
 .footer-social-links .networks-link{
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: grey;
+
+    
+    /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 /* -------стиль проэкты ---------*/
@@ -436,7 +441,11 @@ img {
     line-height: 1.88;
     color: var(--second-text-color);
 }
-
+.project-card.item:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+                0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 
 /* -------стиль логотипов компаний---------- */
 .clients-list {
@@ -507,6 +516,7 @@ img {
 /* стиль присоедняйтесь */
 .join{
     display: flex;
+    align-items: baseline;
 }
 .join-box{
     margin-left: 70px;
